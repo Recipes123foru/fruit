@@ -89,50 +89,59 @@ li {
     </header>
     <!--Image slideshow-->
     <section>
-        <div class="container">
-            <!--<img class="mySlides" src="pictures/pic1.jpg"
+        <div class="containers">
+            
+            <img class="mySlidess" src="Fruit and veg/pic2.jpg"
                  style="width:100%" height="700">-->
-            <img class="mySlides" src="Fruit and veg/pic2.jpg"
                  
-            <!--<img class="mySlides" src="pictures/pic3.jpg"
-                 style="width:100%" height="700">-->
+            
+                 
             <div class="centered">Preeti's Fruit and Veg</div>
         </div>
     </section>
 
+   <br />
+   <br/>
+    
     <!--This is my comics images-->
 
-    <img class="column" src="comics pic/100 bullets.jpg" />
-    <img class="column" src="comics pic/AT.jpg" />
-    <img class="column" src="comics pic/Authority.jpg" />
-    <img class="column" src="comics pic/Batman.jpg" />
-    <img class="column" src="comics pic/CaptainAmericavo.jpg" />
-    <img class="column" src="comics pic/daredevil.jpg" />
-    <img class="column" src="comics pic/dddd.jpg" />
-    <img class="column" src="comics pic/fables.jpg" />
-    <img class="column" src="comics pic/green lantern.jpg" />
-    <img class="column" src="comics pic/hellboy.jpg" />
-    <img class="column" src="comics pic/kick-ass-issue-3-jrjr.jpg" />
-    <img class="column" src="comics pic/ms marvel.jpg" />
-    <img class="column" src="comics pic/planetary.jpg" />
-    <img class="column" src="comics pic/Preacher.jpg" />
-    <img class="column" src="comics pic/promethea.jpg" />
-    <img class="column" src="comics pic/Runaways_1.jpg" />
-    <img class="column" src="comics pic/saga.jpg" />
-    <img class="column" src="comics pic/Spiderman.jpg" />
-    <img class="column" src="comics pic/starman.jpg" />
-    <img class="column" src="comics pic/Strangers in paradise.jpg" />
-    <img class="column" src="comics pic/superman.jpg" />
-    <img class="column" src="comics pic/the punisher.jpg" />
-    <img class="column" src="comics pic/the walking dead.jpg" />
-    <img class="column" src="comics pic/wanted.jpg" />
-    <img class="column" src="comics pic/x-men.jpg" />
+    <section>
+        <div class="container">
+            <img class="mySlides" src="Fruit and veg/pic1.jpg"
+                 style="width:100%" height="700">
+            <img class="mySlides" src="Fruit and veg/pic6.jpg"
+                 style="width:100%" height="700">
+            <img class="mySlides" src="Fruit and veg/pic3.jpg"
+                 style="width:100%" height="700">
+            <img class="mySlides" src="Fruit and veg/pic6.jpg"
+                 style="width:100%" height="700">
+
+        </div>
+    </section>
 
 
     <!--This is my Javascript file-->
 
 
+<script>
+// this code for my slideshow
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
    
+   
+</script>   
 
 
 
