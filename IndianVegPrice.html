@@ -1,1 +1,130 @@
-qqqq
+<html>
+<head>
+    
+    <title></title>
+    <!--My CSS page-->
+
+    <style>
+        /*Nav style*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+        }
+
+        .active {
+            background-color: Red;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 20%;
+            padding: 5px;
+            color: white
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+
+
+</head>
+<body bgcolor="black">
+    <!--This is my Nav tab-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="FruitPrice.html">Fruit Price</a></li>
+                <li><a href="VegPrice.html">Veg Price</a> </li>
+                <li><a class="active" href="IndianVegPrice.html">Indian Veg Price</a> </li>
+                <li><a href="Rating.html">Contact Us</a> </li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <section>
+
+        <div>
+            <img src="Fruit and veg/pic4.jpg"
+                 style="width:100%" height="350">
+
+        </div>
+
+
+    </section>
+
+    <!--This is my comics images-->
+
+    <div class="row">
+        <div class="column">
+            <img src="Fruit and veg/pic7.png" alt="Snow" style="width:80%">
+            <p>Hello : R20.00 each </p>
+        </div>
+        <div class="column">
+            <img src="Fruit and veg/pic8.jpg" alt="Forest" style="width:80%">
+            <p>number1 </p>
+        </div>
+        <div class="column">
+            <img src="Fruit and veg/pic6.jpg" alt="Mountains" style="width:80%">
+        </div>
+        <div class="column">
+            <img src="Fruit and veg/pic4.jpg" alt="Mountains" style="width:80%">
+        </div>
+        <div class="column">
+            <img src="Fruit and veg/pic1.jpg" alt="Mountains" style="width:80%">
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="column">
+            <img src="Fruit and veg/pic7.png" alt="Snow" style="width:80%">
+            <p>Hello </p>
+        </div>
+        <div class="column">
+            <img src="Fruit and veg/pic8.jpg" alt="Forest" style="width:80%">
+            <p>number1 </p>
+        </div>
+        <div class="column">
+            <img src="Fruit and veg/pic6.jpg" alt="Mountains" style="width:80%">
+        </div>
+        <div class="column">
+            <img src="Fruit and veg/pic4.jpg" alt="Mountains" style="width:80%">
+        </div>
+        <div class="column">
+            <img src="Fruit and veg/pic1.jpg" alt="Mountains" style="width:80%">
+        </div>
+
+    </div>
+
+
+</body>
+</html>
