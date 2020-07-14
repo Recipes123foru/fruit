@@ -48,6 +48,19 @@
             display: table;
             
         }
+         #myInput {
+            position:absolute;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 40%;
+            font-size: 16px;
+            padding: 10px 11px 10px 30px;
+            border: 2px solid #ddd;
+            margin-bottom: 10px;
+          
+            
+        }
+        
 
 
     </style>
@@ -65,6 +78,7 @@
                 <li><a href="VegPrice.html">Veg Price</a> </li>
                 <li><a href="IndianVegPrice.html">Indian Veg Price</a> </li>
                 <li><a href="Rating.html">Contact Us</a> </li>
+                <input id="myInput" type="text" placeholder="Search For fruit names...">
 
             </ul>
 
@@ -411,5 +425,18 @@
 
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $(".row *").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    
+    
 </body>
 </html>
